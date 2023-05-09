@@ -1,4 +1,4 @@
-
+#bug - accepts blank intput - accepts all characters
 
 print("Please enter the pickup information")
 
