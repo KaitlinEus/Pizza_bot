@@ -10,6 +10,12 @@ from random import randint
 # List of random names
 names = ["Nicole", "Denzelle", "Andrea", "Kris", "Ryanne", "Phuong", "Bomee", "Rian", "Kaitlin", "Unica", "Rafael"]
 
+
+# list of pizza names and prices
+pizza_names = ['Margherita', 'Pepperoni', 'Hawaiian', 'Cheese', 'Italian', 'Veggie', 'Vegan', 
+               'Chicken Deluxe', 'Mega Meat Lovers', 'Seafood Deluxe', 'Apricot Chicken Deluxe', 'BBQ Chicken Deluxe']
+pizza_prices = [8.50, 8.50, 8.50, 8.50, 8.50, 8.50, 8.50, 13.50, 13.50, 13.50, 13.50, 13.50]
+
 # customer detailes dictionary
 customer_details = {}
 
@@ -120,12 +126,23 @@ def delivery_info():
 
 
 
-# Choose total number of Pizzas - max 5
-
-
 
 
 # Pizza menu
+def menu():
+        num_pizzas = 12
+
+        for count in range (num_pizzas):
+            print("{} {} ${:.2f}".format(count+1, pizza_names[count], pizza_prices[count]))
+
+
+
+
+
+
+# Choose total number of Pizzas - max 5
+
+
 
 
 
@@ -162,6 +179,7 @@ def main():
      
     welcome()
     order_type()
+    menu()
 
 
 main()
