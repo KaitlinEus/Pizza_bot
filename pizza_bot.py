@@ -8,7 +8,7 @@ import random
 from random import randint
 
 # List of random names
-names = ["Nicole", "Denzelle", "Andrea", "Kris", "Ryanne", "Phuong", "Bomee", "Rian", "Kaitlin", "Unica", "Rafael"]
+names = ["Nicole", "Denzelle", "Andrea", "Kris", "Ryanne", "Phuong", "Bomee", "Rian", "Kaitlin", "Rafael"]
 
 
 # list of pizza names and prices
@@ -40,7 +40,7 @@ def welcome():
     Returns: None
     '''
 
-    num = randint(0,10)
+    num = randint(0,9)
     name = (names[num])
 
     # Welcome message
@@ -122,9 +122,6 @@ def delivery_info():
     customer_details['suburb'] = not_blank(question)
 
     print(customer_details['suburb'])
-
-
-
 
 
 
